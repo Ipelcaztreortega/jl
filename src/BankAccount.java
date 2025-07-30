@@ -69,7 +69,7 @@ public class BankAccount {
         this.customerName = customerName;
     };
 
-
+    // method used to described
     public void describeAccount() {
         System.out.println("The user: " + customerName + " with account number " +  accountNumber + " and a balance of: $" + accountBalance);
     }

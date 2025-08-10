@@ -7,6 +7,10 @@ record GroceryItem(String name, String type, int count) {
     public GroceryItem(String name) {
         this(name, "DAIRY", 1);
     }
+    @Override
+    public String toString() {
+        return String.format("%d %s in %s", count, name.toUpperCase(), type);
+    };
 }
 
 
@@ -33,7 +37,12 @@ public class ArrayLists {
         groceryList.add(new GroceryItem("Oranges", "Produce", 5));
 
         // We can add a new item using an index to see where we would like to have it
-        groceryList.add(0, new GroceryItem("Apple", "Produce", 6));
+//        groceryList.add(0, new GroceryItem("Apple", "Produce", 6));
+
+        // You can use the set operator to replace an entry instead of adding
+        groceryList.set(0, new GroceryItem("Apple", "Produce", 6));
+
+        groceryList.remove(1);
 
         System.out.println(groceryList);
 

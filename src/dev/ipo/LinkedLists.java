@@ -5,6 +5,10 @@ import java.util.ListIterator;
 
 public class LinkedLists {
     public static void main(String[] args) {
+        // Quick tip, when we looked at the linkedList or ArrayList, like below, will not work with primitive collections
+        // LinkedList<int> places = new LinkedList() // This will not work directly
+
+
 //        LinkedList<String> placesToVisit = new LinkedList<>();
 
         // Second way to initialize Linked List
